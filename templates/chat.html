@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MrDoctor - AI Virtual Doctor | 24/7 Healthcare Assistant</title>
+    <meta name="description" content="Meet MrDoctor, your intelligent virtual doctor available 24/7. Get instant medical advice, health assessments, and personalized care recommendations with AI-powered healthcare technology.">
+    <meta name="author" content="MrDoctor Healthcare">
+
+    <meta property="og:title" content="MrDoctor - AI Virtual Doctor">
+    <meta property="og:description" content="Your intelligent virtual doctor available 24/7. Get instant medical advice and personalized care recommendations.">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="medical-icon stethoscope-1"></div>
+            <div class="medical-icon chat-1"></div>
+            <div class="medical-icon stethoscope-2"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge">
+                        <span class="badge-icon">🩺</span>
+                        <span>Virtual Healthcare Assistant</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Meet <span class="gradient-text">MrDoctor</span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        Your intelligent virtual doctor available 24/7. Get instant medical advice, 
+                        health assessments, and personalized care recommendations.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary">
+                            💬 Start Consultation
+                        </button>
+                        <button class="btn btn-outline">
+                            Learn More
+                        </button>
+                    </div>
+                    
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span>HIPAA Compliant</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span>AI-Powered</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span>Available 24/7</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="{{ url_for('static', filename='images/mrdoctor-hero.jpg') }}" alt="MrDoctor Virtual Healthcare Interface">
+                        <div class="image-overlay"></div>
+                    </div>
+                    
+                    <div class="floating-card status-card">
+                        <div class="status-indicator"></div>
+                        <span>Online Now</span>
+                    </div>
+                    
+                    <div class="floating-card availability-card">
+                        <div class="availability-number">24/7</div>
+                        <div class="availability-text">Available</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span>❤️ Healthcare Innovation</span>
+                </div>
+                <h2 class="section-title">
+                    Why Choose <span class="gradient-text">MrDoctor?</span>
+                </h2>
+                <p class="section-description">
+                    Experience the future of healthcare with our intelligent virtual doctor. 
+                    Combining advanced AI technology with medical expertise for better health outcomes.
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h3>AI-Powered Diagnosis</h3>
+                    <p>Advanced machine learning algorithms analyze your symptoms and medical history for accurate assessments.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🕒</div>
+                    <h3>24/7 Availability</h3>
+                    <p>Access healthcare consultation anytime, anywhere. No appointments needed, immediate responses guaranteed.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>HIPAA Compliant</h3>
+                    <p>Your medical data is encrypted and protected with the highest security standards and privacy protocols.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">❤️</div>
+                    <h3>Personalized Care</h3>
+                    <p>Tailored health recommendations based on your unique medical profile and lifestyle factors.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3>Licensed Oversight</h3>
+                    <p>All AI recommendations are reviewed by licensed medical professionals for quality assurance.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Instant Results</h3>
+                    <p>Get immediate health insights and recommendations without waiting in long queues or booking appointments.</p>
+                </div>
+            </div>
+
+            <div class="stats-section">
+                <div class="stat-item">
+                    <div class="stat-number">50K+</div>
+                    <div class="stat-label">Consultations</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Accuracy Rate</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Availability</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4.9★</div>
+                    <div class="stat-label">User Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chat Preview Section -->
+    <section class="chat-preview">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span>💬 Interactive Experience</span>
+                </div>
+                <h2 class="section-title">
+                    See <span class="gradient-text">MrDoctor</span> in Action
+                </h2>
+                <p class="section-description">
+                    Experience how our AI-powered virtual doctor provides personalized healthcare guidance 
+                    through natural conversation.
+                </p>
+            </div>
+
+            <div class="chat-container">
+                <div class="chat-header">
+                    <div class="doctor-info">
+                        <div class="doctor-avatar">MD</div>
+                        <div class="doctor-details">
+                            <h3>MrDoctor</h3>
+                            <p>Virtual Healthcare Assistant • Online</p>
+                        </div>
+                    </div>
+                    <div class="status-badge">
+                        <div class="status-dot"></div>
+                        <span>Active</span>
+                    </div>
+                </div>
+
+                <div class="chat-messages">
+                    <div class="message user-message">
+                        <div class="message-content">
+                            <p>Hi MrDoctor, I've been having headaches for the past 3 days. What could be causing this?</p>
+                            <span class="message-time">2:30 PM</span>
+                        </div>
+                        <div class="user-avatar">U</div>
+                    </div>
+
+                    <div class="message doctor-message">
+                        <div class="doctor-avatar-small">MD</div>
+                        <div class="message-content">
+                            <p>Hello! I'd be happy to help you with your headache concerns. Can you tell me more about the nature of these headaches? Are they constant or do they come and go?</p>
+                            <span class="message-time">2:31 PM</span>
+                        </div>
+                    </div>
+
+                    <div class="message user-message">
+                        <div class="message-content">
+                            <p>They usually start in the morning and get worse throughout the day. It feels like pressure behind my eyes.</p>
+                            <span class="message-time">2:32 PM</span>
+                        </div>
+                        <div class="user-avatar">U</div>
+                    </div>
+
+                    <div class="message doctor-message">
+                        <div class="doctor-avatar-small">MD</div>
+                        <div class="message-content">
+                            <p>Based on your symptoms, this could be tension headaches or possibly related to eye strain. I recommend:<br><br>• Take regular breaks from screens<br>• Ensure proper hydration<br>• Consider over-the-counter pain relief<br><br>Would you like me to ask a few more questions for a more detailed assessment?</p>
+                            <span class="message-time">2:33 PM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-input">
+                    <button class="input-btn">📎</button>
+                    <input type="text" placeholder="Type your health question..." disabled>
+                    <button class="input-btn">🎤</button>
+                    <button class="btn btn-primary btn-small">📤</button>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <button class="btn btn-primary btn-large">
+                    💬 Start Your Consultation Now
+                </button>
+                <p class="cta-text">
+                    Free consultation • No registration required • Instant responses
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const startButtons = document.querySelectorAll(".btn-primary"); 
+            const inputField = document.querySelector(".chat-input input");
+            const sendBtn = document.querySelector(".chat-input .btn-primary.btn-small");
+            const chatBox = document.querySelector(".chat-messages");
+    
+            // Disable chat input by default
+            inputField.disabled = true;
+    
+            // Enable chat input when "Start Consultation" is clicked
+            startButtons.forEach(btn => {
+                btn.addEventListener("click", () => {
+                    inputField.disabled = false;
+                    inputField.focus();
+                });
+            });
+    
+            // Function to send message
+            async function sendMessage() {
+                const msg = inputField.value.trim();
+                if (!msg) return;
+    
+                // Show user message
+                chatBox.innerHTML += `
+                    <div class="message user-message">
+                        <div class="message-content"><p>${msg}</p></div>
+                        <div class="user-avatar">U</div>
+                    </div>
+                `;
+                inputField.value = "";
+    
+                // Send to Flask
+                const response = await fetch("/get", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                    body: "msg=" + encodeURIComponent(msg)
+                });
+    
+                const answer = await response.text();
+    
+                // Show doctor message
+                chatBox.innerHTML += `
+                    <div class="message doctor-message">
+                        <div class="doctor-avatar-small">MD</div>
+                        <div class="message-content"><p>${answer}</p></div>
+                    </div>
+                `;
+    
+                // Auto scroll down
+                chatBox.scrollTop = chatBox.scrollHeight;
+            }
+    
+            // Send on button click
+            sendBtn.addEventListener("click", sendMessage);
+    
+            // ✅ Send on Enter key
+            inputField.addEventListener("keypress", function (e) {
+                if (e.key === "Enter") {
+                    sendMessage();
+                }
+            });
+        });
+    </script>
+    
+</body>
+</html>
